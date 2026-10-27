@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<title>Clip Factory Terms of Use</title>
+<meta name="description" content="Clip Factory is an internal video processing and publishing tool. Learn about its workflow, privacy practices and terms of use.">
+<style>
+:root { color-scheme: only light; --ink:#17252e; --muted:#52636b; --accent:#11675d; --line:#d9e2e1; }
+* { box-sizing:border-box; }
+html { background:#fff; scroll-behavior:auto; }
+body { margin:0; color:var(--ink); background:#fff; font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+a { color:var(--accent); text-underline-offset:4px; text-decoration-thickness:1px; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:2px; }
+.skip { position:absolute; left:16px; top:-80px; background:#fff; padding:8px 14px; }
+.skip:focus { top:12px; z-index:2; }
+.site-header { border-bottom:1px solid var(--line); }
+.header-inner, main, .footer-inner { width:min(1080px,calc(100% - 64px)); margin:auto; }
+.header-inner { min-height:82px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.brand { color:var(--ink); font-size:23px; font-weight:750; letter-spacing:-.6px; text-decoration:none; }
+nav { display:flex; flex-wrap:wrap; align-items:center; gap:12px 26px; font-size:14px; font-weight:600; }
+nav a { color:var(--muted); text-decoration:none; }
+nav a[aria-current=page] { color:var(--accent); text-decoration:underline; }
+h1,h2,h3 { line-height:1.2; letter-spacing:-.035em; }
+h1 { font-size:clamp(36px,5vw,60px); margin:0 0 18px; font-weight:750; }
+h2 { font-size:24px; margin:0 0 14px; }
+h3 { font-size:17px; margin:8px 0 6px; letter-spacing:-.015em; }
+p { margin:0 0 16px; }
+.intro { padding:36px 0 26px; }
+.intro .lead { font-size:20px; line-height:1.5; max-width:860px; margin-bottom:14px; }
+.internal { color:var(--muted); font-size:15px; max-width:860px; margin:0; }
+.workflow { padding:0 0 26px; }
+.steps { list-style:none; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:22px; padding:0; margin:0; }
+.steps li { border-top:1px solid var(--line); padding-top:12px; }
+.step-number { color:var(--accent); font-size:12px; font-weight:750; letter-spacing:.08em; }
+.steps p { font-size:14px; line-height:1.55; color:var(--muted); margin:0; }
+.integration { display:flex; align-items:center; gap:28px; padding:24px 0 28px; border-top:1px solid var(--line); }
+.youtube-link { display:block; flex:0 0 200px; line-height:0; background:#fff; }
+.youtube-logo { display:block; width:200px; height:auto; }
+.integration h2 { font-size:20px; margin-bottom:10px; letter-spacing:-.025em; }
+.integration p { font-size:14px; color:var(--muted); margin:0; max-width:660px; }
+.site-footer { border-top:1px solid var(--line); }
+.footer-inner { padding:22px 0 28px; display:flex; justify-content:space-between; gap:18px 32px; flex-wrap:wrap; font-size:13px; }
+.footer-inner p { margin:0; }
+.footer-links { display:flex; flex-wrap:wrap; gap:8px 18px; }
+.document { max-width:840px; padding-top:40px; padding-bottom:36px; }
+.document h1 { font-size:clamp(32px,4.1vw,44px); }
+.document .byline { font-size:14px; color:var(--muted); padding-bottom:20px; margin-bottom:26px; border-bottom:1px solid var(--line); }
+.document h2 { font-size:23px; margin-top:30px; margin-bottom:12px; }
+.document ul { padding-left:22px; }
+.document li { margin:8px 0; }
+.scope { font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace; overflow-wrap:anywhere; color:var(--accent); }
+.scope-list { display:grid; grid-template-columns:1fr; gap:12px; margin:18px 0; }
+.scope-list div { border-left:3px solid var(--line); padding:2px 0 2px 18px; }
+.scope-list p { margin:5px 0 0; }
+.policy-links { display:flex; flex-wrap:wrap; gap:12px 24px; font-weight:600; }
+@media (max-width:800px) {
+ .steps { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+ .header-inner { gap:20px; }
+ nav { gap:10px 18px; }
+}
+@media (max-width:560px) {
+ .header-inner,main,.footer-inner { width:calc(100% - 40px); }
+ .header-inner { align-items:flex-start; flex-direction:column; justify-content:center; padding:20px 0; gap:12px; }
+ .intro { padding-top:30px; }
+ .intro .lead { font-size:18px; }
+ .steps { grid-template-columns:1fr; gap:18px; }
+ .steps li { display:grid; grid-template-columns:28px 1fr; column-gap:10px; }
+ .step-number { grid-row:1 / 3; padding-top:8px; }
+ .steps p { grid-column:2; }
+ .integration { align-items:flex-start; flex-direction:column; gap:16px; }
+ .youtube-link { flex-basis:auto; }
+ .document { padding-top:30px; }
+ .document h1 { max-width:360px; }
+ .footer-inner { flex-direction:column; }
+}
+@media print { .site-header,.site-footer,.skip { display:none; } main { width:100%; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html">Clip Factory</a>
+<nav aria-label="Main navigation"><a href="index.html">Overview</a> <a href="privacy.html">Privacy Policy</a> <a href="terms.html" aria-current="page">Terms of Use</a></nav>
+</div></header>
+<main id="main" class="document">
+<h1>Clip Factory Terms of Use</h1>
+<p class="byline">Operator: Clip Factory<br>Contact: <a href="mailto:zaderoni1@gmail.com">zaderoni1@gmail.com</a></p>
+<p>Clip Factory is an internal video processing and publishing tool used by its operator. It is not offered as a public SaaS or consumer service.</p>
+<h2>YouTube terms</h2>
+<p>By using this API Client, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+<p>Use of YouTube functionality is subject to those terms and applicable Google/YouTube API policies, including the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a> and <a href="https://developers.google.com/youtube/terms/developer-policies">YouTube Developer Policies</a>. Google's data practices are described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>Operator responsibilities</h2>
+<p>The operator is responsible for selecting content they are authorized to process and upload, including obtaining the necessary rights and permissions. Clip Factory does not claim ownership of third-party content merely because it processes or uploads it.</p>
+<p>The operator is responsible for uploaded metadata and visibility settings. The factory can publish publicly according to the operator's configured authorization and schedule, subject to YouTube's restrictions. A separate manual upload tool also offers private, unlisted and public visibility choices.</p>
+<p>The tool sets Made for Kids to No. If content is made for kids, the operator must immediately go to YouTube on desktop and declare it as made for kids.</p>
+<h2>Authorization and disconnecting</h2>
+<p>Google handles sign-in; the tool stores OAuth authorization locally and does not collect or store YouTube/Google passwords. The in-tool <strong>Revoke YouTube Access</strong> feature programmatically revokes Google's authorization after confirmation and deletes locally stored OAuth authorization after successful revocation. <a href="https://security.google.com/settings/security/permissions">Google Security Permissions</a> is an additional revocation method. See the <a href="privacy.html#data-deletion">Privacy Policy's data deletion section</a> for local cleanup details.</p>
+<p>Disconnecting does not delete videos already stored on YouTube. Manage those separately in YouTube Studio.</p>
+<h2>Independent tool</h2>
+<p>Nothing on this site implies endorsement or partnership with YouTube or Google. References to those services describe the API integration only.</p>
+</main>
+<footer class="site-footer"><div class="footer-inner">
+<p>Operator: Clip Factory<br>Contact: <a href="mailto:zaderoni1@gmail.com">zaderoni1@gmail.com</a></p>
+<div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a><a href="https://policies.google.com/privacy">Google Privacy Policy</a></div>
+</div></footer>
+</body></html>
+
